@@ -28,14 +28,14 @@ export class Product extends Component {
                             {" "}
                             in cart
                             </p>
-                        ):(<i className="fas fa-cart-plus"/>)
+                        ):(<span className='btn'>Add to Cart</span>)
                     }
                     </Buttonc>
                     <div className="card-footer d-flex justify-content-between">
-                        <p className='align-self-center mb-0'>{title}</p>
+                        <div className='align-self-center mb-0'>{title}</div>
                         <h5 className='text-blue font-italic '>
-                            <span className='mr-1'>$</span>
-                            {price}
+                            <div className='mr-1'>${price}</div>
+                            
                         </h5>
                         </div>
                </div> )
@@ -56,6 +56,10 @@ Product.propsTypes={
 }
 console.log(Product.propsTypes)
 const ProductWapper=styled.div`
+.btn{
+    justify-align:center;;
+}
+
 .card{
     margin-bottom:20px;
     border-color:transparent;

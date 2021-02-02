@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import {productlist,detailProduct} from './data'
 import Productlist from './Productlist'
-
 export const Productcontext=React.createContext()
- export class ProductContextProvider extends Component 
+export class ProductContextProvider extends Component 
  {
      state={
          products:[],
@@ -25,7 +24,7 @@ export const Productcontext=React.createContext()
          })
      }
      getItem=(id)=>{
-         const product=this.state.products.find(item=>item.id===id)
+           const product=this.state.products.find(item=>item.id===id)
          return product
      }
      increament=(id)=>{
@@ -38,13 +37,14 @@ export const Productcontext=React.createContext()
             this.addtotals()
         })
     }
+
      clearCart=(id)=>{
-        /* this.setState({cart:[]},()=>{
+         this.setState({cart:[]},()=>{
              this.setProducts()
              this.addtotals()
-         console.log("clearCart")*/
-         
-           }
+         console.log("clearCart")
+           })
+        }
      
      addtotals=()=>{
          let subtotal=0
@@ -67,7 +67,6 @@ export const Productcontext=React.createContext()
     this.setState({products:tempro},()=>{
         console.log(this.state)
         this.addtotals()
-    
     })
   } 
 }    

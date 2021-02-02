@@ -7,6 +7,7 @@ import Cartlist from './cartlist'
 import Navbar from './Navbar'
 import { Nav } from 'react-bootstrap'
 import Carttotals from './Carttotals'
+import styled from 'styled-components'
 export default class cart extends Component {
     render() {
         return (
@@ -14,17 +15,18 @@ export default class cart extends Component {
            {(value)=>{const {cart}=value 
            if(cart.length>0){
             return(
-                <React.Fragment>
+                <div style={{'paddingLeft':'180px','marginTop':'70px','textAlign':'center'}}>
                     <Navbar/>
            <Title name="your" title='cart'/>
                 <Cartcol/>
                 <Cartlist value={value}/>
-                <Carttotals value={value}/>
-                </React.Fragment>
+                <Carttotals value={value} history={this.props.history}/>
+                </div>
                )
            }
            else{
                return(
+                
                    <div style={{'paddingLeft':'250px','marginTop':'90px','textAlign':'center'}}>
                    <Navbar/>
             <Emptycart/>    
