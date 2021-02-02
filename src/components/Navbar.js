@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {NavLink} from 'react-router-dom';
 import styled from 'styled-components'
-import {Buttonc} from './Button'
+
 export default class Navbar extends Component {
     render() {
         return (
