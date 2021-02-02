@@ -5,9 +5,9 @@ import Cartcol from './cartcolumns'
 import Emptycart from './Empty'
 import Cartlist from './cartlist'
 import Navbar from './Navbar'
-import { Nav } from 'react-bootstrap'
+//import { Nav } from 'react-bootstrap'
 import Carttotals from './Carttotals'
-import styled from 'styled-components'
+//import styled from 'styled-components'
 export default class cart extends Component {
     render() {
         return (

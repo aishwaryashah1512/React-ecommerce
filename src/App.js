@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Navbar from './components/Navbar'
 import Cart from './components/cart'
 import Productlist from './components/Productlist'
-import {Product} from './components/Product'
 import PageNotFound from './components/Pagenotfound'
 import Details from './components/Details'
 import{BrowserRouter,Route,Switch} from 'react-router-dom'

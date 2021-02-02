@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import Navbar from './Navbar'
+
 import {Link} from 'react-router-dom'
 import PropTypes from 'prop-types'
-import {Productcontext, ProductContextProvider} from './ProductContext'
-import Modal from './modal'
+import {Productcontext} from './ProductContext'
+//import Modal from './modal'
 import {Buttonc} from './Button'
 export class Product extends Component {
     render() {

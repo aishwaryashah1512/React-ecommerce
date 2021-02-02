@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 import {Productcontext} from './ProductContext'
 import {Link} from 'react-router-dom'
-import Navbar from './Navbar'
 import { Buttonc} from './Button'
 export default class Details extends Component {
     render() {
         console.log("A")
         return (
             <div>
-        <Productcontext.Consumer>{value=>{const {id,company,img,info,price,title,inCart}=value.detailProduct
+        <Productcontext.Consumer>{value=>{const {id,company,img,price,title,inCart}=value.detailProduct
         console.log(value.detailProduct)
         return(
                 <div className='container py-5'>

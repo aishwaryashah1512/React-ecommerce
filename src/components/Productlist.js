@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Navbar from './Navbar'
 import Title from './title'
-import {productlist,detailProduct} from './data'
+import {productlist} from './data'
 import {Productcontext} from './ProductContext'
 import {Product} from './Product'
 export default class Productlist extends Component {
@@ -17,8 +17,7 @@ export default class Productlist extends Component {
                        <Navbar/>        
                        <Title name='our' title='Products'/>
                        <div className='row'>
-                        <Productcontext.Consumer>{(value)=>{return value.products.map
-                            ((val,i)=>{return <Product index={i} key={val.id} product={val}/>})}}</Productcontext.Consumer>
+                        <Productcontext.Consumer>{(value)=>{return value.products.map((val,i)=>{return <Product index={i} key={val.id} product={val}/>})}}</Productcontext.Consumer>
                        </div>
                    </div>
                </div>

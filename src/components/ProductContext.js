@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import {productlist,detailProduct} from './data'
-import Productlist from './Productlist'
 export const Productcontext=React.createContext()
 export class ProductContextProvider extends Component 
  {
@@ -71,7 +70,7 @@ export class ProductContextProvider extends Component
   } 
 }    
   handleDetail=(id)=>{
-        const pro=this.getItem(id)
+        
          console.log("HEllo from handle detail")
          }
      
