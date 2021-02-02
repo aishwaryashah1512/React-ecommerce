@@ -32,7 +32,7 @@ export default class modal extends Component {
                                                 <Buttonc cart onClick={modalclose}>Shop</Buttonc>
                                             </Link>
                                             <Link to='/cart'>
-                                                <Buttonc cart onClick={modalclose} cart>Cart</Buttonc>
+                                                <Buttonc cart onClick={modalclose} >Cart</Buttonc>
                                             </Link>
                                        </div>
                                    </div>
